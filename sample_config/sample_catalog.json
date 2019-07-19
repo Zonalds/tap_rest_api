@@ -17,14 +17,14 @@
                     "id": {
                         "type": [
                             "null",
-                            "number"
+                            "integer"
                         ],
                         "inclusion": "automatic"
                     },
                     "parent_id": {
                         "type": [
                             "null",
-                            "number"
+                            "integer"
                         ],
                         "inclusion": "automatic"
                     },
