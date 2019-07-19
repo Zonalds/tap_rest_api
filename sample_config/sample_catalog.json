@@ -1,0 +1,692 @@
+{
+    "streams": [
+        {
+            "stream": "orders",
+            "tap_stream_id": "orders",
+            "schema": {
+                "selected": true,
+                "type": "object",
+                "properties": {
+                    "_etl_tstamp": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "id": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "parent_id": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "number": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "order_key": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "created_via": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "version": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "status": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "currency": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "date_created": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time",
+                        "inclusion": "automatic"
+                    },
+                    "date_created_gmt": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time",
+                        "inclusion": "automatic"
+                    },
+                    "date_modified": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time",
+                        "inclusion": "automatic"
+                    },
+                    "date_modified_gmt": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time",
+                        "inclusion": "automatic"
+                    },
+                    "discount_total": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "discount_tax": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "shipping_total": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "shipping_tax": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "cart_tax": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "total": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "total_tax": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "prices_include_tax": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "customer_id": {
+                        "type": [
+                            "null",
+                            "number"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "customer_ip_address": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "customer_user_agent": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "customer_note": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "billing": {
+                        "type": [
+                            "null",
+                            "object"
+                        ],
+                        "properties": {
+                            "first_name": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "last_name": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "company": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "address_1": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "address_2": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "city": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "state": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "postcode": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "country": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "email": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "phone": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            }
+                        },
+                        "inclusion": "automatic"
+                    },
+                    "shipping": {
+                        "type": [
+                            "null",
+                            "object"
+                        ],
+                        "properties": {
+                            "first_name": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "last_name": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "company": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "address_1": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "address_2": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "city": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "state": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "postcode": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "country": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            }
+                        },
+                        "inclusion": "automatic"
+                    },
+                    "payment_method": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "payment_method_title": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "transaction_id": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "date_paid": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time",
+                        "inclusion": "automatic"
+                    },
+                    "date_paid_gmt": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "format": "date-time",
+                        "inclusion": "automatic"
+                    },
+                    "date_completed": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "date_completed_gmt": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "cart_hash": {
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "inclusion": "automatic"
+                    },
+                    "meta_data": {
+                        "type": [
+                            "null",
+                            "array"
+                        ],
+                        "items": {
+                            "type": [
+                                "null",
+                                "object"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "key": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "value": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                }
+                            }
+                        },
+                        "inclusion": "automatic"
+                    },
+                    "line_items": {
+                        "type": [
+                            "null",
+                            "array"
+                        ],
+                        "items": {
+                            "type": [
+                                "null",
+                                "object"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "name": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "product_id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "variation_id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "quantity": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "tax_class": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "subtotal": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "subtotal_tax": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "total": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "total_tax": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "taxes": {
+                                    "type": [
+                                        "null",
+                                        "array"
+                                    ],
+                                    "items": {
+                                        "type": [
+                                            "null",
+                                            "object"
+                                        ],
+                                        "properties": {
+                                            "id": {
+                                                "type": [
+                                                    "null",
+                                                    "number"
+                                                ]
+                                            },
+                                            "total": {
+                                                "type": [
+                                                    "null",
+                                                    "number"
+                                                ]
+                                            },
+                                            "subtotal": {
+                                                "type": [
+                                                    "null",
+                                                    "number"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                "sku": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "price": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                }
+                            }
+                        },
+                        "inclusion": "automatic"
+                    },
+                    "tax_lines": {
+                        "type": [
+                            "null",
+                            "array"
+                        ],
+                        "items": {
+                            "type": [
+                                "null",
+                                "object"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "rate_code": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "rate_id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "label": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "compound": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "tax_total": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "shipping_tax_total": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                }
+                            }
+                        },
+                        "inclusion": "automatic"
+                    },
+                    "shipping_lines": {
+                        "type": [
+                            "null",
+                            "array"
+                        ],
+                        "items": {
+                            "type": [
+                                "null",
+                                "object"
+                            ],
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "method_title": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "method_id": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                    ]
+                                },
+                                "total": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                },
+                                "total_tax": {
+                                    "type": [
+                                        "null",
+                                        "number"
+                                    ]
+                                }
+                            }
+                        },
+                        "inclusion": "automatic"
+                    },
+                    "_links": {
+                        "type": [
+                            "null",
+                            "object"
+                        ],
+                        "properties": {
+                            "self": {
+                                "type": [
+                                    "null",
+                                    "array"
+                                ],
+                                "items": {
+                                    "type": [
+                                        "null",
+                                        "object"
+                                    ],
+                                    "properties": {
+                                        "href": {
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            "collection": {
+                                "type": [
+                                    "null",
+                                    "array"
+                                ],
+                                "items": {
+                                    "type": [
+                                        "null",
+                                        "object"
+                                    ],
+                                    "properties": {
+                                        "href": {
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "inclusion": "automatic"
+                    }
+                }
+            }
+        }
+    ]
+}

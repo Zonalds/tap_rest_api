@@ -1,0 +1,11 @@
+{
+  "url":"https://apps.tiny.cloud/wp-json/wc/v3/orders?after={start_datetime}&before={end_datetime}&orderby=date&order=asc&per_page={items_per_page}&page={current_page}",
+  "username":"",
+  "password":"",
+  "tap_stream_id": "orders",
+  "schema_dir": "../../schemas",
+  "schema": "orders",
+  "datetime_key": "date_created",
+  "start_datetime":"2019-07-01T00:00:00Z",
+  "end_datetime":"2019-07-09T00:00:00Z"
+}
